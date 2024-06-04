@@ -1,6 +1,3 @@
-
-# go-expert-ratelimit 
-
 ## Descrição
 Ratelimit é uma aplicação em Go, projetada para limitar o número de solicitações a um endpoint com base em tokens ou endereços IP. Utiliza Redis para armazenamento de dados e Locust para testes de carga. A aplicação é ideal para gerenciar o tráfego de entrada, garantindo a disponibilidade e a eficiência do serviço.
 
