@@ -2,17 +2,16 @@ package main
 
 import (
 	"fmt"
-	"net/http"
-	"time"
-
 	"github.com/dukivt/rate-limiter/configs"
 	"github.com/dukivt/rate-limiter/internal/infra/web/handlers"
 	"github.com/dukivt/rate-limiter/internal/infra/web/middlewares"
 	"github.com/dukivt/rate-limiter/internal/infra/web/webserver"
 	"github.com/dukivt/rate-limiter/pkg/logger"
 	"github.com/dukivt/rate-limiter/pkg/ratelimit"
+	redisEventStorage "github.com/dukivt/rate-limiter/pkg/ratelimit/redis"
 	"github.com/go-redis/redis/v8"
-	redisEventStorage "github.com/verdade/go-expert-ratelimit/pkg/ratelimit/redis"
+	"net/http"
+	"time"
 )
 
 func main() {

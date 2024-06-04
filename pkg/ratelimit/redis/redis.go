@@ -6,6 +6,7 @@ import (
 	"time"
 
 	"github.com/dukivt/rate-limiter/pkg/ratelimit"
+	"github.com/go-redis/redis/v8"
 )
 
 type RedisEventStorage struct {
